@@ -134,7 +134,9 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 5em 2em;
+    padding-top: 8em; /* Increased top padding to push content away from the header */
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .hero::after {
@@ -351,17 +353,27 @@ footer a:hover {
         display: none; /* Hide the default nav on smaller screens */
     }
     .hamburger {
-        display: block; /* Show the hamburger menu */
+        display: block;
+        position: absolute; /* Make it float to the right of the container */
+        top: 1em;
+        right: 1em;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+    }
+    #nav-menu {
+        display: none; /* Hide the nav menu by default */
     }
     #nav-menu.active {
-        display: block; /* Show nav when active */
+        display: block; /* Show the nav menu when the active class is added */
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
         width: 100%;
         background-color: #1565c0;
         text-align: center;
         padding: 1em 0;
+        z-index: 1000; /* Ensure it appears on top of other elements */
     }
     .nav-list {
         flex-direction: column; /* Stack nav items vertically */

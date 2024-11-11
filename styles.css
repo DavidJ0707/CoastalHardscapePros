@@ -412,5 +412,13 @@ footer a:hover {
         height: auto;
         justify-content: flex-start;
     }
+    ul, ol {
+        padding-left: 1.5em;  /* Add padding to the left to prevent bullet points/numbers from touching the edge */
+    }
+
+    .container {
+        padding-left: 1em;  /* Add some padding to the main container for better spacing on mobile */
+        padding-right: 1em;  /* Also add padding to the right for a balanced look */
+    }
 }
 

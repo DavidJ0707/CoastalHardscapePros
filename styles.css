@@ -173,8 +173,8 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    width: 100%;
-    max-width: 250px; /* Limit the button width */
+    width: 220px;
+    max-width: 100%; /* Limit the button width */
     text-align: center;
     margin: 1em auto; /* Vertical margin for spacing */
     font-family: 'Montserrat', sans-serif;

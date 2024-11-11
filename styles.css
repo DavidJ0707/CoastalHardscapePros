@@ -134,7 +134,7 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 2em;
+    padding: 5em 2em;
 }
 
 .hero::after {
@@ -367,20 +367,24 @@ footer a:hover {
         flex-direction: column; /* Stack nav items vertically */
         gap: 1em;
     }
-}
-
-@media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between; /* Logo on the left, hamburger on the right */
+        align-items: center;
+        flex-direction: row; /* Keep the header items in a row */
+        padding: 0 1em; /* Add padding for spacing */
+    }
+    .logo {
+        order: 1; /* Logo stays on the left */
+    }
+    .hamburger {
+        order: 2; /* Hamburger stays on the right */
+    }
     .hero-content {
         padding: 1em;
     }
     .btn {
         width: 90%; /* Make the buttons full width on smaller screens */
     }
-    .header-container {
-        flex-direction: column; /* Stack the logo and hamburger vertically */
-        align-items: center; /* Center everything */
-    }
-    .logo {
-        margin-bottom: 1em; /* Add space between logo and hamburger/nav */
-    }
 }
+

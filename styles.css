@@ -1,0 +1,335 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page structure */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, .logo, .call-banner {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;  /* Makes headings and other key text look bold and strong */
+}
+
+nav a, p, .service-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+p {
+    line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul, li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+/* Header styles */
+header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1565c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo img {
+    max-width: 250px;
+    height: auto;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f1f1f1;
+}
+/* Hide dropdown by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    list-style: none;
+}
+
+/* Show dropdown when hovering over services */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style for dropdown links */
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #1565c0;
+}
+
+.call-banner {
+    background-color: #2596be;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3em;
+
+}
+
+.call-banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.call-banner a:hover {
+    text-decoration: none;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('media/hero.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 2em;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2em;
+}
+
+.hero-content a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8b400;
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e09e00;
+}
+
+.btn-secondary {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #2596be;
+    border: 2px solid #2596be;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.btn-secondary:hover {
+    background-color: #2596be;
+    color: white;
+}
+
+/* About Section */
+.about {
+    padding: 3em 0;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #2596be;
+    margin-bottom: 1em;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 3em 0;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #2596be;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.service-item {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    color: #2596be;
+    margin-bottom: 0.5em;
+}
+.values-list li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Matches the border-radius of the service-item card */
+    margin-bottom: 1em; /* Adds some space between the image and the title */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5em;  /* Add space between items */
+    margin-top: 2em;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  /* Add some soft corners to the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for a more polished look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img:hover {
+    transform: scale(1.03);  /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+}
+/* Projects Section */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5em;  /* Add space between items */
+    margin-top: 2em;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  /* Add some soft corners to the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for a more polished look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item img:hover {
+    transform: scale(1.03);  /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2596be; /* or any color that fits your theme */
+    text-align: center; /* to match other headings */
+    margin: 1.5rem;
+}
+
+/* Footer */
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 3em;
+}
+
+footer a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #f8b400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+

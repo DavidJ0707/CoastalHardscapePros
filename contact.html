@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coastal Hardscape Pros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/icon.ico" type="image/x-image">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Contact Coastal Hardscape Pros for a free quote or to learn more about our services in outdoor living, pavers, concrete, and more.">
+    <style>
+        /* Contact Form Styles */
+        form {
+            background-color: #f9f9f9;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 2em auto;
+        }
+
+        form label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form textarea {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            width: 100%;
+            padding: 0.75em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form input[type="tel"]:focus,
+        form textarea:focus {
+            border-color: #2596be;
+        }
+
+        .btn {
+            background-color: #1565c0;
+            color: white;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 1em;
+        }
+
+        .btn:hover {
+            background-color: #1e7aa8;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8em;
+            color: #2596be;
+            margin-bottom: 0.5em;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .logo img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1em;
+        }
+
+        /* Improved Contact Section */
+        #contact h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #1565c0;
+            margin-bottom: 1em;
+        }
+
+        #contact p {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 2em;
+            color: #555;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="call-banner">
+        <a href="tel:3526100835">Call 352-610-0835</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="media/logo.svg" alt="Coastal Hardscape Pros Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/pavers.html">Pavers</a></li>
+                            <li><a href="services/retaining-walls.html">Retaining Walls</a></li>
+                            <li><a href="services/outdoor-living.html">Outdoor Living</a></li>
+                            <li><a href="services/concrete-work.html">Concrete Work</a></li>
+                            <li><a href="services/repair-maintenance.html">Repair & Maintenance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Contact Us</h2>
+            <p>We are here to help you bring your outdoor vision to life. Fill out the form, or reach out today to schedule a free estimate.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <p><strong>Phone:</strong> (352) 610-0835</p>
+                <p><strong>Email:</strong> ryan@coastalhardscapepros.com</p>
+                <p><strong>Service Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+            </div>
+            <form action="https://your-web-service-endpoint" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Coastal Hardscape Pros. All rights reserved.</p>
+            <p>Follow us:
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -224,7 +224,8 @@ nav a:hover {
     margin-bottom: 1em;
 }
 
-.about p {
+.about p, .service-areas, .projects p {
+    text-align: center;
     font-size: 1.2em;
     line-height: 1.6;
 }

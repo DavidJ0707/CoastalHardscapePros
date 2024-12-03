@@ -128,10 +128,28 @@ nav a:hover {
     text-decoration: none;
 }
 
+.social-link {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0d47a1;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
 
 /* Hero Section */
 .hero {
-    background: url('media/hero.jpg') no-repeat center center/cover;
+    background: url('media/hero.jpg') no-repeat center bottom/cover;
     height: 70vh;
     color: white;
     display: flex;
@@ -323,6 +341,7 @@ nav a:hover {
     text-align: center; /* to match other headings */
     margin: 1.5rem;
 }
+
 
 /* Footer */
 footer {

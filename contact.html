@@ -84,6 +84,43 @@
             line-height: 1.6;
         }
 
+        .service-areas {
+            text-align: center;
+            margin: 2em auto;
+            padding: 1.5em;
+            max-width: 800px;
+        }
+
+        .service-areas h3 {
+            font-size: 1.8em;
+            color: #2596be;
+            margin-bottom: 0.5em;
+        }
+
+        .service-areas p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .county-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .county-list li {
+            font-size: 1.1em;
+            color: #333;
+            background: #eaf4fc;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         /* Improved Contact Section */
         #contact h2 {
             text-align: center;
@@ -148,31 +185,31 @@
         </div>
     </section>
 
-    <!-- Add this above the contact form -->
-    <div class="service-areas" style="margin-top: 1.5em;">
-        <h3>Areas We Serve</h3>
-        <p>We provide services in the following counties:</p>
-        <ul>
-            <li>Citrus</li>
-            <li>Hernando</li>
-            <li>Pasco</li>
-            <li>Sumter</li>
-            <li>Parts of Lake and Marion counties</li>
-        </ul>
-        <!-- Optional: Embed a Google Map highlighting your service areas -->
-        <!-- <iframe src="your-google-map-embed-link" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-    </div>
-
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
+
+            <div class="service-areas">
+                <h3>Areas We Serve</h3>
+                <p>We proudly serve the following counties in Florida:</p>
+                <ul class="county-list">
+                    <li>Citrus</li>
+                    <li>Hernando</li>
+                    <li>Pasco</li>
+                    <li>Sumter</li>
+                    <li>Parts of Lake and Marion</li>
+                </ul>
+            </div>
+
             <div class="contact-info">
                 <h3>Our Contact Information</h3>
                 <p><strong>Phone:</strong> (352) 610-0835</p>
                 <p><strong>Email:</strong> ryan@coastalhardscapepros.com</p>
                 <p><strong>Service Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
             </div>
+
+
             <form action="https://your-web-service-endpoint" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -195,11 +232,20 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Coastal Hardscape Pros. All rights reserved.</p>
-            <p>Serving <strong>Citrus, Hernando, Pasco, Sumter</strong>, and parts of <strong>Lake and Marion</strong> counties.</p>
-            <p>Follow us:
-                <a href="#">Facebook</a> |
-                <a href="#">Instagram</a> |
-                <a href="#">LinkedIn</a>
+            <p>
+                Serving
+                <strong><span style="color: #1565c0;">Citrus</span>,
+                <span style="color: #1565c0;">Hernando</span>,
+                <span style="color: #1565c0;">Pasco</span>,
+                <span style="color: #1565c0;">Sumter</span></strong>, and parts of
+                <strong><span style="color: #1565c0;">Lake</span></strong> and
+                <strong><span style="color: #1565c0;">Marion</span></strong> counties.
+            </p>
+            <p>Follow us:</p>
+            <p>
+                <a href="https://www.facebook.com/profile.php?id=61568173469988" class="social-link" aria-label="Facebook" target="_blank">
+                    <img src="media/facebook-icon.svg" alt="Facebook Icon" class="social-icon"> Facebook
+                </a>
             </p>
         </div>
     </footer>
